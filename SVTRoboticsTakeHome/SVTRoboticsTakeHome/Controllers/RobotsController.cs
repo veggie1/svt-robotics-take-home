@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RobotEngine;
+using RobotEngine.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,8 +30,10 @@ namespace SVTRoboticsTakeHome.Controllers
 
         // POST api/<RobotController>
         [HttpPost]
-        public async Task Post([FromBody] string value)
+        public async Task<IActionResult> ClosestRobot([FromBody] RobotCoordinates robotCoordinates)
         {
+            var closestRobot = await _robotService.GetClosestRobot(robotCoordinates);
+            return Ok(closestRobot);
         }
     }
 }
