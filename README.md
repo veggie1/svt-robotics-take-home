@@ -12,18 +12,18 @@ Example Payload:
 
 ```json
 {
-	"loadId": 231,
-	"x": 5,
-	"y": 3
+  "loadId": 231,
+  "x": 5,
+  "y": 3
 }
 ```
 5. The API will return the robotId, distance to the goal, and the battery level of the robot.
 Example result:
 ```json
 {
-	"robotId": 4,
-	"distanceToGoal": 12.206555615733702,
-	"batteryLevel": 37
+  "robotId": 4,
+  "distanceToGoal": 12.206555615733702,
+  "batteryLevel": 37
 }
 ```
 
