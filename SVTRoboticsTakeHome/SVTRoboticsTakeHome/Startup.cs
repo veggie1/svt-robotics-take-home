@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using RobotEngine;
 
 namespace SVTRoboticsTakeHome
 {
@@ -25,6 +26,8 @@ namespace SVTRoboticsTakeHome
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddScoped<RobotService, RobotService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

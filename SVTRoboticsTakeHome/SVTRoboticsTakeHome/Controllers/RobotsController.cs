@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RobotEngine;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,18 +11,25 @@ namespace SVTRoboticsTakeHome.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class RobotController : ControllerBase
+    public class RobotsController : ControllerBase
     {
+        private readonly RobotService _robotService;
+        public RobotsController(RobotService robotService)
+        {
+            _robotService = robotService;
+        }
+
         // GET: api/<RobotController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IActionResult> Get()
         {
-            return new string[] { "value1", "value2" };
+            var result = await _robotService.GetRobot();
+            return Ok(result);
         }
 
         // POST api/<RobotController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task Post([FromBody] string value)
         {
         }
     }

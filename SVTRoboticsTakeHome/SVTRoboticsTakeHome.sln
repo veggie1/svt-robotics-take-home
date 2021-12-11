@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SVTRoboticsTakeHome", "SVTRoboticsTakeHome\SVTRoboticsTakeHome.csproj", "{CEB89E2A-F0C5-4844-95E1-E506499C8B1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotEngine", "RobotService\RobotEngine.csproj", "{391E358F-8C5C-4050-9494-4B3754180CFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CEB89E2A-F0C5-4844-95E1-E506499C8B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEB89E2A-F0C5-4844-95E1-E506499C8B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEB89E2A-F0C5-4844-95E1-E506499C8B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{391E358F-8C5C-4050-9494-4B3754180CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{391E358F-8C5C-4050-9494-4B3754180CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{391E358F-8C5C-4050-9494-4B3754180CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{391E358F-8C5C-4050-9494-4B3754180CFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
