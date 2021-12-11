@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RobotEngine.Models
 {
-    public class RobotCoordinates
+    public class LoadCoordinates
     {
         public int LoadId { get; set; }
         public int x { get; set; }

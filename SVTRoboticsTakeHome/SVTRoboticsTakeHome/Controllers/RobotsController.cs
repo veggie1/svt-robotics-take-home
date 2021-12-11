@@ -20,19 +20,11 @@ namespace SVTRoboticsTakeHome.Controllers
             _robotService = robotService;
         }
 
-        // GET: api/<RobotController>
-        [HttpGet]
-        public async Task<IActionResult> Get()
-        {
-            var result = await _robotService.GetRobot();
-            return Ok(result);
-        }
-
         // POST api/<RobotController>
         [HttpPost]
-        public async Task<IActionResult> ClosestRobot([FromBody] RobotCoordinates robotCoordinates)
+        public async Task<IActionResult> ClosestRobot([FromBody] LoadCoordinates loadCoordinates)
         {
-            var closestRobot = await _robotService.GetClosestRobot(robotCoordinates);
+            var closestRobot = await _robotService.GetBestRobot(loadCoordinates);
             return Ok(closestRobot);
         }
     }

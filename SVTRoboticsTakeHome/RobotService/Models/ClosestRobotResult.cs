@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RobotEngine.Models
 {
-    public class RobotInformation
+    public class ClosestRobotResult
     {
         public int RobotId { get; set; }
         public double DistanceToGoal { get; set; }
